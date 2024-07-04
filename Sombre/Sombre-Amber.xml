@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+<!--  Sombre-Amber v1.0 by sudenim  -->
+<!--  Blueprint can be found @ https://rebrand.ly/Chameleon_and_Cheetah_dna_forum  -->
+
+<variables>
+Accent_Colour="255, 96, 51"
+
+Highlight_Background="38, 39, 40"
+Highlight_Text="255, 255, 255"
+Lowlight_Text="178, 184, 194"
+
+Buttons_Background="32, 33, 34"
+Buttons_Text="178, 184, 194"
+Buttons_Highlight_Text="255, 255, 255"
+
+Playerpanel_Background="32, 33, 34"
+Playerpanel_Text_Default="178, 184, 194"
+Playerpanel_Text_Medium="103, 113, 122"
+Playerpanel_Controls="178, 184, 194"
+Playerpanel_Controls_Lowlight="49, 50, 51"
+Playerpanel_Progress_Background="49, 50, 51"
+Playerpanel_Progress_Fill="255, 96, 51"
+
+Slidebar_Background="49, 50, 51"
+Volume_SlidebarButton="206, 212, 223"
+
+Tabsbar_Background="37, 38, 39"
+Tabsbar_Text_Default="103, 113, 122"
+Tabsbar_Active_Background="47, 48, 49"
+Tabsbar_Text_Active="178, 184, 194"
+
+SearchBox_Background="37, 38, 39"
+SearchBox_Text="178, 184, 194"
+
+Scrollbars_Default="42, 43, 44"
+Scrollbars_Highlight="255, 96, 51"
+
+Panels_Background="42, 43, 44"
+Panels_Text_Default="178, 184, 194"
+Panels_Text_Medium="103, 113, 122"
+Panels_Lines_Alternate="45, 46, 47"
+
+Panels_Headerbar_Background="47, 48, 49"
+Panels_Headerbar_Text="178, 184, 194"
+Panels_Headerbar_Border="42, 43, 44"
+
+Panel_Explorer_Header_Background="38, 39, 40"
+Panel_Exploer_Subheader_Background="49, 50, 51"
+
+Panels_Lines_Separator="42, 43, 44"
+Panels_PanelDividers="50, 51, 52"
+Panels_Splitterline="50, 51, 52"
+Panels_Separatorline="50, 51, 52"
+
+FilterPanel_Background="42, 43, 44"
+FilterPanel_Background_Alternate="42, 43, 44"
+ElementPanel_Background="42, 43, 44"
+
+ConfigPanels_Input_Background="37, 38, 39"
+ConfigPanels_Input_Disabled_Background="37, 38, 39"
+ConfigPanels_Input_Disabled_Text="178, 184, 194"
+ConfigPanels_Input_Forground="178, 184, 194"
+Icon_Colour_Override="255, 96, 51"
+
+    Unknown="0,255,0"
+
+</variables>
+
+<colours id="Default">
+
+ <element id="TitlebarActiveForeColour" bg="Panels_Headerbar_Text" />
+ <element id="TitlebarInactiveForeColour" bg="Panels_Headerbar_Text" />
+
+ <element id="ApplicationBackColour" bg="190,140,30" />
+ <element id="WindowBackColour" bg="Panels_Background" />
+
+ <element id="MenuButton.Default" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Headerbar_Text" bdr="Panels_Separatorline" />
+ <element id="MenuIcon" fg="Panels_Headerbar_Text" />
+
+ <element id="HeaderBar" bg="Panels_Headerbar_Background" bg2="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" bdr="Panels_Headerbar_Background" />
+
+ <element id="Menu.CommandButton.Selected" bg="ConfigPanels_Input_Background" fg="Unknown" bdr="Panels_Background" />
+
+ <element id="Menu.DropDown.Default" bg="Panels_Background" fg="Panels_Text_Default" bdr="Panels_Background" />
+ <element id="Menu.DropDown.Highlight" bg="ConfigPanels_Input_Background" bdr="Panels_Splitterline" />
+ <element id="Menu.DropDown.Disabled" fg="ConfigPanels_Input_Disabled_Text" />
+ <element id="Menu.DropDown.HighlightText" fg="Panels_Text_Default" />
+ <element id="Menu.DropDownCheckBox.Default" bg="Playerpanel_Background" />
+ <element id="Menu.DropDownCheckBox.Highlight" bg="Playerpanel_Background" />
+ <element id="Menu.DropDownCheckBoxBorder.Default" bdr="ConfigPanels_Input_Background" />
+ <element id="Menu.DropDownCheckBoxBorder.Highlight" bdr="ConfigPanels_Input_Background" />
+ <element id="Menu.DropDownCheckBoxImage" fg="Accent_Colour" />
+ <element id="Menu.DropDownMargin" bg="Panels_Background" />
+ <element id="Menu.DropDownSeparator" bg="Panels_Separatorline" />
+
+ <element id="Menu.ParentItem.Highlight" bg="Buttons_Background" fg="Panels_Headerbar_Text" bdr="Panels_Background" />
+ <element id="Menu.ParentItem.Pressed" bg="ConfigPanels_Input_Background" fg="Panels_Headerbar_Text" />
+
+ <element id="MenuBar.Default" bg="Panels_Background" fg="Panels_Text_Medium" />
+ <element id="MenuBarSeparator" bg="Unknown" />
+
+ <element id="Menu.Header" bg="ConfigPanels_Input_Background" fg="Panels_Headerbar_Text" />
+
+ <element id="LibraryFilterTick" fg="Panels_Text_Default" />
+
+ <element id="CaptionBar.HeaderControl.Default" fg="Panels_Headerbar_Text" />
+ <element id="CaptionBar.HeaderControl.Disabled" fg="Panels_Separatorline" />
+
+ <element id="CaptionBar.CommandButtonOverride" bg="Buttons_Background" fg="Panels_Text_Default" />
+ <element id="CaptionBar.CommandIconOverride" fg="Panels_Headerbar_Text" />
+
+ <element id="CaptionBar.SearchBox.Default" bg="Panels_Background" fg="Panels_Text_Default" bdr="Panels_Background" />
+ <element id="CaptionBar.SearchBox.Lowlight" fg="Panels_Text_Medium" />
+ <element id="CaptionBar.SearchBox.NotActivated" bg="Panels_Headerbar_Background" bdr="Panels_Headerbar_Background" />
+
+ <element id="PreferencesPanel.Default" bg="Tabsbar_Background" bdr="Tabsbar_Background" />
+
+ <element id="InlineMenuBar.Default" fg="Panels_Text_Medium" />
+ <element id="InlineMenu.ParentItem.Highlight" bg="Buttons_Background" fg="Panels_Headerbar_Text" bdr="Buttons_Background" />
+ <element id="InlineMenu.ParentItem.Pressed" bg="ConfigPanels_Input_Background" fg="Panels_Headerbar_Text" />
+
+ <element id="TagEditorPanel.Header" bg="ConfigPanels_Input_Background" fg="Panels_Text_Default" />
+ <element id="TagEditorPanel.MenuLine" bg="ConfigPanels_Input_Background" />
+ <element id="TagEditorPanel.FaintLine" bg="ConfigPanels_Input_Background" />
+ <element id="TagEditorWindowBackground" bg="Panels_Background" />
+
+ <element id="VerticalTagEditor" bg="Panels_Background" fg="Panels_Text_Default" />
+
+ <element id="InputPanel.Default" bg="Panels_Background" fg="Panels_Text_Default" bdr="Panels_Background" />
+ <element id="InputPanel.Highlight" fg="Panels_Text_Default" />
+
+ <element id="AzBar.Default" fg="Panels_Headerbar_Text" />
+ <element id="AzBar.Lowlight" fg="Mainpanel_Headerbar_Lowlight" />
+
+ <element id="Content[AlbumAndTracks].Header" fg="Playerpanel_Text_Default" />
+ <element id="Content[AlbumAndTracks].SubHeader" fg="Playerpanel_Text_Default" />
+ <element id="Content[AlbumAndTracks].ArtistSplitterLine" bg="Panels_Splitterline" bg2="Panels_Splitterline" />
+ <element id="Content[AlbumAndTracks].ArtistSplitterLineLR" bg="Panels_Splitterline" bg2="Panels_Splitterline" />
+ <element id="Content[AlbumAndTracks].ArtworkText" fg="Panels_Text_Default" />
+ <element id="Content[AlbumAndTracks].ItemSeparatorLine" fg="Panels_Lines_Separator" />
+ <element id="Content[AlbumAndTracks].GridHeaderSplitterLine" bg="Panels_Splitterline" />
+ <element id="Content[AlbumAndTracks].GridTrackSplitterLine" bg="Panels_Lines_Separator" />
+
+ <element id="Content[Artwork].GroupingHeader" fg="Panels_Text_Default" />
+ <element id="Content[Artwork].SplitterLine" bg="Panels_Splitterline" bg2="Panels_Splitterline" />
+ <element id="Content[Artwork].Body.Default" bg="Panels_Background" fg="Panels_Text_Default" />
+ <element id="Content[Artwork].Body.Highlight" bg="Panels_Text_Default" />
+ <element id="Content[Artwork].Body.Lowlight" bg="Scrollbars_Default" />
+ <element id="Content[Artwork].ArtworkText" bg="MainPanel_Rating_Albums_Lowlight" fg="Panels_Text_Default" />
+ <element id="Content[Artwork].HeaderControl.Default" bg="Panels_Text_Default" bg2="Panels_Text_Default" fg="Panels_Splitterline" bdr="Panels_Background" />
+ <element id="Content[Artwork].ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Scrollbars_Highlight" />
+ <element id="Content[Artwork].ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="Content[Artwork].ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="Content[Artwork].ScrollBar.Lowlight" bg="Scrollbars_Default" bdr="Panels_Background" />
+
+ <element id="Content[Artwork].Expanded" bg="Panels_Separatorline" fg="Panels_Text_Default" fg2="Panels_Text_Default" />
+ <element id="Content[Artwork].Expanded.Highlight" bg="Accent_Colour" fg="Highlight_Text" />
+ <element id="Content[Artwork].Expanded.Lowlight" bg="Accent_Colour" fg="Highlight_Text" />
+ <element id="Content[Artwork].GroupingHeaderFile" bg="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" />
+
+ <element id="Content[TrackDetail].Body.Default" bg="Panels_Background" fg="Panels_Text_Default" bdr="Panels_PanelDividers" />
+ <element id="Content[TrackDetail].ListAlternating.Default" bg="Panels_Lines_Alternate" fg="Panels_Text_Default" />
+ <element id="Content[TrackDetail].Body.Highlight" bg="Highlight_Background" fg="Highlight_Text" bdr="Accent_Colour" />
+ <element id="Content[TrackDetail].Body.Lowlight" bg="Highlight_Background" fg="Lowlight_Text" bdr="Accent_Colour" />
+ <element id="Content[TrackDetail].Body.Disabled" fg="Panels_Splitterline" />
+ <element id="Content[TrackDetail].ListAlternating.Disabled" fg="Panels_Splitterline" />
+ <element id="Content[TrackDetail].Body.ListHeader" bg="Panel_Exploer_Subheader_Background" bg2="Panel_Exploer_Subheader_Background" fg="Panels_Headerbar_Text" bdr="Panels_Background" />
+ <element id="Content[TrackDetail].ItemSeparatorLine" fg="Panels_Lines_Separator" />
+ <element id="Content[TrackDetail].Header" fg="Panels_Text_Medium" />
+ <element id="Content[TrackDetail].HeaderLine" bg="Panels_Splitterline" bg2="Panels_Splitterline" />
+
+ <element id="Controls.AlbumThumb" fg="Panels_Splitterline" />
+ <element id="Controls.GenreThumb" fg="Panels_Splitterline" />
+ 
+ <element id="Controls.ArtworkFrame" bdr="0,20,200,20" />
+
+ <element id="Controls.Button.Default" bg="Buttons_Background" bg2="Buttons_Background" fg="Buttons_Text" fg2="Panels_Background" bdr="Panels_Background" />
+ <element id="Controls.Button.Highlight" bg="Accent_Colour" fg="Buttons_Highlight_Text" bdr="Panels_Background" />
+ <element id="Controls.Button.Disabled" bg="ConfigPanels_Input_Disabled_Background" fg="ConfigPanels_Input_Disabled_Text" bdr="ConfigPanels_Input_Disabled_Background" />
+
+ <element id="Controls.Arrow.Default" fg="Panels_Text_Default" />
+ <element id="Controls.Arrow.Highlight" fg="Panels_Headerbar_Text" />
+
+ <element id="Controls.Counter" bg="Panels_Headerbar_Background" fg="Lowlight_Text" />
+ <element id="Controls.DropdownButton.Default" bg="ConfigPanels_Input_Background" bg2="ConfigPanels_Input_Background" fg="Panels_Headerbar_Text" bdr="ConfigPanels_Input_Background" />
+ <element id="Controls.DropdownButton.Disabled" bg="ConfigPanels_Input_Disabled_Background" bg2="ConfigPanels_Input_Disabled_Background" fg="ConfigPanels_Input_Disabled_Background" bdr="ConfigPanels_Input_Disabled_Background" />
+ <element id="Controls.FaintLine" bg="Panels_Splitterline" />
+
+ <element id="Controls.PanelLayoutArea" bg="ConfigPanels_Input_Disabled_Background" />
+
+ <element id="Controls.DropAreaIndicator" fg="Panels_Text_Default" />
+ <element id="Controls.DropRowIndicator" fg="Panels_Text_Default" />
+ <element id="Controls.LargeTickBoxFill" bg="ConfigPanels_Input_Background" bdr="Panels_Separatorline" />
+
+ <element id="Controls.SubscriptionCounter" bg="Accent_Colour" fg="Panels_Text_Default" />
+ <element id="Controls.EpisodeNotPlayed" bg="Panels_Text_Default" />
+ <element id="Controls.EpisodeDownloading" fg="Panels_Text_Default" />
+
+ <element id="Controls.InputControl.Default" bg="ConfigPanels_Input_Background" fg="ConfigPanels_Input_Forground" bdr="Panels_Separatorline" />
+ <element id="Controls.InputControl.Highlight" bg="Accent_Colour" fg="Highlight_Text" bdr="Accent_Colour" />
+ <element id="Controls.InputControl.Disabled" bg="ConfigPanels_Input_Disabled_Background" fg="ConfigPanels_Input_Disabled_Text" bdr="Panels_Background" />
+ <element id="Controls.InputControl.Lowlight" bg="ConfigPanels_Input_Disabled_Background" fg="Panels_Headerbar_Text" bdr="ConfigPanels_Input_Background" />
+ <element id="Controls.InputControl.Modified" fg="Accent_Colour" />
+
+ <element id="Controls.ListHeader" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Text_Default"  />
+
+ <element id="Controls.RadioButton.Default" bg="Panels_Headerbar_Text" />
+ <element id="Controls.RadioButton.Disabled" bg="ConfigPanels_Input_Disabled_Text" />
+
+ <element id="Controls.ScrollBarBackground.Default" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="Controls.ScrollBar.Lowlight" bg="Scrollbars_Default" />
+ <element id="Controls.ScrollBar.Default" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" />
+ <element id="Controls.ScrollBarThumb.Default" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ 
+ <element id="Controls.SearchBox.Default" bg="SearchBox_Background" fg="SearchBox_Text" />
+ <element id="Controls.SearchBox.Lowlight" bg="SearchBox_Background" fg="SearchBox_Text" />
+ <element id="Controls.SearchBoxSplitter" bg="Panels_Separatorline" />
+ 
+ <element id="Panel.SearchBox.NotActivated" bg="SearchbBox_Background" bg2="SearchBox_Background" bdr="SearchBox_Background" />
+ <element id="Panel.SearchBox" bdr="Searchbox_Background" />
+
+ <element id="Controls.FindButton.Default" bg="Panels_Background" fg="Highlight_Text" />
+
+ <element id="Controls.SliderButton.Default" bg="Panels_Text_Default" bdr="Panels_Background" />
+ <element id="Controls.SliderButton.Disabled" bg="ConfigPanels_Input_Disabled_Text" bdr="Panels_Background" />
+ <element id="Controls.SliderBar.Default" fg="Panels_Splitterline" />
+ <element id="Controls.SliderBar.Disabled" fg="ConfigPanels_Input_Disabled_Background" />
+
+ <element id="Controls.StarRating.Default" bg="ConfigPanels_Input_Background" fg="Panels_Headerbar_Text" fg2="ConfigPanels_Input_Disabled_Background" bdr="Panels_Background" />
+
+ <element id="Controls.TabHeader.Default" bg="Tabsbar_Background" fg="Tabsbar_Text_Default" bdr="Tabsbar_Background" />
+ <element id="Controls.TabHeader.Highlight" bg="Accent_Colour" fg="Buttons_Highlight_Text" />
+ <element id="Controls.TabHeader.Lowlight" bg="Unknown" />
+ <element id="Controls.TabHeader.Inactive" bdr="Panels_Background" />
+
+ <element id="Controls.VerticalMenu.Default" bg="Tabsbar_Background" fg="Panels_Text_Default" bdr="Panels_Separatorline" />
+ <element id="Controls.VerticalMenu.Highlight" bg="Buttons_Background" fg="Panels_Text_Default" bdr="Accent_Colour" />
+ <element id="Controls.VerticalMenu.Lowlight" bg="Buttons_Background" fg="Panels_Text_Default" bdr="Accent_Colour" />
+
+ <element id="Controls.DropdownButton.Highlight" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Headerbar_Text" bdr="Panels_Background" />
+ <element id="Controls.CheckBoxInList" bg="ConfigPanels_Input_Disabled_Background" bdr="Panels_Text_Medium" />
+ 
+ <element id="Toolbar.Background" bg="Unknown" />
+ <element id="Toolbar.Body" bg="Panels_Background" />
+ <element id="Toolbar.MenuTextOverride" fg="Panels_Text_Default" />
+
+ <element id="FilterPanel.ListHeader" bg="Unknown" bg2="Unknown" fg="Unknown" bdr="Unknown" />
+ <element id="FilterPanel.Default" bg="FilterPanel_Background" fg="Panels_Text_Default" bdr="Unknown" />
+ <element id="FilterPanel.ListAlternating.Default" bg="FilterPanel_Background_Alternate" fg="Lowlight_Text" />
+ <element id="FilterPanel.Highlight" bg="Highlight_Background" fg="Panels_Text_Default" bdr="Accent_Colour" />
+ <element id="FilterPanel.Lowlight" bg="Highlight_Background" fg="Lowlight_Text" bdr="Accent_Colour" />
+ <element id="FilterPanel.ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Scrollbars_Highlight" />
+ <element id="FilterPanel.ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Background" bdr="Panels_Background" />
+ <element id="FilterPanel.ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="FilterPanel.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+ 
+ <element id="ColumnBrowser.ListHeader" bg="Panels_Headerbar_Background" bg2="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" bdr="Panels_Background" />
+ <element id="ColumnBrowser.Default" bg="Panels_Background" fg="Panels_Text_Default" />
+ <element id="ColumnBrowser.ListAlternating.Default" bg="Panels_Background" fg="Panels_Text_Default" />
+ <element id="ColumnBrowser.Highlight" bg="Highlight_Background" fg="Highlight_Text" bdr="Accent_Colour" />
+ <element id="ColumnBrowser.Lowlight" bg="Accent_Colour" fg="Lowlight_Text" fg2="Unknown" bdr="Accent_Colour" />
+ <element id="ColumnBrowser.ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Panels_Background" />
+ <element id="ColumnBrowser.ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="ColumnBrowser.ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="ColumnBrowser.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="ColumnBrowser.BottomBorderLine" bdr="Panels_Headerbar_Border" />
+
+ <element id="Panel.CommandButtonOverride" bg="Buttons_Background" fg="Buttons_Text" />
+ <element id="Panel.CommandIconOverride" fg="Panels_Headerbar_Text" />
+
+ <element id="Panel.Body.Default" bg="FilterPanel_Background" fg="Panels_Text_Default" bdr="Panels_PanelDividers" />
+ <element id="Panel.Body.Highlight" bg="Highlight_Background" fg="Panels_Text_Default" bdr="Accent_Colour" />
+ <element id="Panel.Body.Lowlight" bg="Highlight_Background" fg="Lowlight_Text" bdr="Accent_Colour" />
+ 
+ <element id="Panel.Header.Default" bg="Panels_Background" fg="Panels_Text_Default" />
+ <element id="Panel.HeaderButtonOverride.Default" fg="Panels_Headerbar_Text" />
+ <element id="Panel.HeaderButtonOverride.Highlight" bg="Accent_Colour" fg="Buttons_Text" />
+ <element id="Panel.HeaderButtonOverride.Disabled" fg="Panels_Separatorline" />
+ 
+ <element id="Panel.HeaderControl.Default" fg="Panels_Text_Medium" bdr="Unknown" />
+ <element id="Panel.HeaderControl.Highlight" bg="Unknown" bg2="Unknown" fg="Unknown" bdr="Unknown" />
+
+ <element id="Panel.ChildBody.Default" bg="Panels_Background" fg="Panels_Text_Default" />
+ <element id="Panel.ChildBody.Highlight" bg="Highlight_Background" fg="Highlight_Text" bdr="Accent_Colour" />
+ <element id="Panel.ChildBody.Lowlight" bg="Accent_Colour" fg="Lowlight_Text" bdr="Accent_Colour" />
+ <element id="Panel.ChildBody.ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Scrollbars_Highlight" />
+ <element id="Panel.ChildBody.ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="Panel.ChildBody.ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="Panel.ChildBody.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="Panel.ChildHeader.Default" bg="Panels_Headerbar_Background" bg2="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" bdr="Panels_Headerbar_Background" />
+
+ <element id="TrackInfoPanel" bg="0,0,255" />
+
+ <element id="Panel.TabButton.Default" bg="ConfigPanels_Input_Background" bg2="ConfigPanels_Input_Background" fg="Panels_Text_Medium" />
+
+ <element id="Content[ArtistProfile]" bg="Unknown"  />
+
+ <element id="Panel.NotLovedIcon.Highlight" fg="Highlight_Text" fg2="Panels_Background" />
+ <element id="Panel.NotLovedIcon.Lowlight" fg2="Accent_Colour" />
+ <element id="Panel.LovedIcon.Highlight" fg="Unknown" fg2="Unknown" />
+ <element id="Panel.LovedIcon.Lowlight" fg="Unknown" />
+
+ <element id="Panel.ScrollBar.Default" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Scrollbars_Highlight" />
+ <element id="Panel.ScrollBarBackground.Default" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="Panel.ScrollBarThumb.Default" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="Panel.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+ 
+ <element id="Panel.SectionHeader.Default" bg="Panels_Headerbar_Background" bg2="Panels_Headerbar_Background" fg="Panels_Text_Default" />
+
+ <element id="Panel.StarRating.Default" fg="Panels_Text_Medium" fg2="Panels_Separatorline" />
+ <element id="Panel.StarRating.Highlight" fg="Panels_Text_Medium" fg2="Panels_Background" />
+ <element id="Panel.StarRating.Lowlight" fg="Panels_Text_Medium" fg2="Accent_Colour" />
+
+ <element id="Panel.StatusBar.Default" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Splitterline" bdr="Panels_Background" />
+ <element id="Panel.StatusBarControl.Default" fg="Panels_Splitterline" />
+ <element id="Panel.StatusBarInPanel.Default" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Splitterline" bdr="Panels_Background" />
+ <element id="Panel.StatusBarControlInPanel.Default" fg="Panels_Splitterline" />
+ <element id="Panel.StatusBarBelowPlayer.Default" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Splitterline" bdr="Panels_Background" />
+ <element id="Panel.StatusBarControlBelowPlayer.Default" fg="Panels_Splitterline" />
+
+ <element id="Panel.SubHeader.Default" bg="Panels_Background" />
+
+ <element id="Panel.TabSelector.Default" fg="Panels_Headerbar_Text" bdr="ConfigPanels_Input_Background" />
+ <element id="Panel.TabSelector.Highlight" bg="Accent_Colour" bg2="Accent_Colour" fg="Buttons_Highlight_Text" bdr="Panels_Headerbar_Background" />
+ <element id="Panel.TabSelector.Lowlight" bg="Panels_Background" bg2="Panels_Background" fg="Unknown" bdr="Unknown" />
+ 
+ <element id="ElementPanel.Default" bg="ElementPanel_Background" fg="Panels_Text_Default" />
+ <element id="ElementPanel.ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Scrollbars_Highlight" />
+ <element id="ElementPanel.ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="ElementPanel.ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="ElementPanel.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+
+ <element id="LeftNavigator.ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="LeftNavigator.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="LeftNavigator.ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Panels_Background" />
+ <element id="LeftNavigator.ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+
+ <element id="RadioAndAutoDjPanel" bg="ConfigPanels_Input_Background" fg="Panels_Headerbar_Text" />
+
+ <element id="TabsBar.Tab.Default"  bg="Tabsbar_Background" fg="Tabsbar_Text_Default"  bdr="Unknown" />
+ <element id="TabsBar.Background" bg="Tabsbar_Background" bg2="Tabsbar_Background" />
+ <element id="TabsBar.AltBackground" bg="Tabsbar_Background" bg2="Tabsbar_Background" />
+ <element id="TabsBar.Tab.Highlight" bg="Tabsbar_Active_Background" bg2="Tabsbar_Active_Background" fg="Tabsbar_Text_Active" bdr="Tabsbar_Active_Background" />
+ <element id="TabsBar.BorderLine" bdr="Tabsbar_Background" />
+ <element id="TabsBar.Tab.Separator" bg="Panels_Splitterline" />
+
+ <element id="TabsBar.TabInCaptionBar.Default" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Text_Default" bdr="0,0,0,0" />
+ <element id="TabsBar.TabInCaptionBar.Highlight" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Headerbar_Text" bdr="Panels_Splitterline" />
+ <element id="TabsBar.TabInCaptionBar.Separator" bg="Panels_Splitterline" />
+ <element id="TabsBar.TabInCaptionBar.BorderLine" bdr="Panels_Splitterline"  />
+ <element id="TabsBar.TabInCaptionBarAddButton.Default" fg="Panels_Text_Medium" bg="Unknown" />
+
+ <element id="TabsBar.TabInCaptionBarTop.Default" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Text_Medium" bdr="0,0,0,0" />
+ <element id="TabsBar.TabInCaptionBarTop.Highlight" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Headerbar_Text" bdr="Panels_Splitterline" />
+ <element id="TabsBar.TabInCaptionBarTop.Separator" bg="Panels_Splitterline" />
+ <element id="TabsBar.TabInCaptionBarTop.BorderLine" bdr="Panels_Splitterline" />
+ <element id="TabsBar.TabInCaptionBarTopAddButton.Default" fg="Panels_Text_Medium" bg="Unknown" />
+
+ <element id="TabsBar.TabInCaptionBarBlended.Default" bg="Unknown" fg="Panels_Text_Medium" />
+ <element id="TabsBar.TabInCaptionBarBlended.Highlight" bg="Panels_Headerbar_Background" bg2="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" />
+ <element id="TabsBar.TabInCaptionBarBlended.BorderLine" bdr="0,217,89,87" />
+ <element id="TabsBar.TabInCaptionBarBlended.Separator" bg="Panels_Splitterline" />
+ <element id="TabsBar.TabInCaptionBarBlended.AddButton" fg="Panels_Text_Medium" bg="Unknown" />
+
+ <element id="TabsBar.TabBlended.Highlight" bg="Panels_Headerbar_Background" bg2="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" />
+ <element id="TabsBar.TabBlended.Separator" bg="Panels_Splitterline" />
+ <element id="TabsBar.TabBlended.BorderLine" bdr="Panels_Background" />
+
+ <element id="Player.StarRating.Default" fg="Playerpanel_Controls" />
+ <element id="Player.StarRating.Lowlight" fg="Playerpanel_Controls_Lowlight" />
+ <element id="Player.SpectrumVisualiser" bg="Panels_Background" bg2="Panels_Background" fg="Panels_Separatorline" fg2="Panels_Text_Medium" bdr="Panels_Text_Medium" />
+ <element id="Player.SpectrumVisualiserFill" fg="Panels_Background" />
+ <element id="Player.Wavebar" bg="Panels_Background" fg="Panels_Text_Medium" fg2="Panels_Separatorline" />
+ <element id="Player.Wavebar.Inner" fg="Panels_Text_Medium" fg2="Panels_Separatorline" />
+ 
+ <element id="VolumeVisualiser" bg="Panels_Background" fg="Panels_Separatorline" fg2="Panels_Text_Medium" />
+ <element id="VolumeVisualiserBar" fg="Panels_Background" />
+ <element id="VolumeVisualiserText" fg="Panels_Text_Medium" />
+
+ <element id="PlayerFlat.Background" bg="Playerpanel_Background" bg2="Playerpanel_Background" />
+ <element id="PlayerFlat.DisplayPanel" bg="Playerpanel_Background" fg="Playerpanel_Text_Default" fg2="Playerpanel_Text_Medium" />
+
+ <element id="PlayerFlat.ProgressBar" bg="Playerpanel_Background" fg="Playerpanel_Progress_Fill" bdr="Playerpanel_Background" />
+ <element id="PlayerFlat.ProgressBarMiddle" bg="Playerpanel_Controls_Lowlight" />
+ <element id="PlayerFlat.ProgressButton" fg="Playerpanel_Progress_Fill" />
+ <element id="PlayerFlat.Control.Default" fg="Playerpanel_Controls" />
+ <element id="PlayerFlat.Control.Highlight" fg="Accent_Colour" />
+ <element id="PlayerFlat.Control.Disabled" fg="Playerpanel_Controls_Lowlight" />
+ <element id="PlayerFlat.TrackPosition" fg="Playerpanel_Text_Medium" />
+
+ <element id="PlayerFlat.VolumeSlideBar" fg="Slidebar_Background" />
+ <element id="PlayerFlat.VolumeSliderButton" fg="Volume_SlidebarButton" />
+ <element id="PlayerFlat.VolumeIcon" fg="Playerpanel_Text_Default" />
+
+ <element id="PlayerFlat.SpectrumDefault" bg="Playerpanel_Background" />
+ <element id="PlayerFlat.SpectrumDead" bg="Playerpanel_Background" />
+ <element id="PlayerFlat.SpectrumLow" bg="Playerpanel_Text_Medium" />
+ <element id="PlayerFlat.SpectrumMedium" bg="Playerpanel_Text_Medium" />
+ <element id="PlayerFlat.SpectrumHigh" bg="Playerpanel_Controls_Lowlight" />
+
+ <element id="PlayerFlat.Wavebar" fg="Playerpanel_Text_Default" fg2="Playerpanel_Controls_Lowlight" />
+ <element id="PlayerFlat.Wavebar.Inner" fg="Playerpanel_Text_Default" fg2="Playerpanel_Controls_Lowlight" />
+
+ <element id="PlayerFlat.StarRating.Default" fg="Playerpanel_Controls" />
+ <element id="PlayerFlat.StarRating.Lowlight" fg="Playerpanel_Controls_Lowlight" />
+ <element id="PlayerFlat.NotLovedIcon" fg="Playerpanel_Controls_Lowlight" />
+
+ <element id="Compact.Player.Background" bg="Panels_Background" fg="Playerpanel_Text_Medium" />
+ <element id="Compact.Player.ProgressBar" fg="Playerpanel_Progress_Fill" />
+ <element id="Compact.Player.ProgressButton" fg="Playerpanel_Progress_Fill"/>
+ <element id="Compact.Player.Control.Default" fg="Playerpanel_Controls" />
+ <element id="Compact.Player.Control.Disabled" fg="Playerpanel_Controls_Lowlight" />
+ <element id="Compact.Player.Control.Highlight" fg="Accent_Colour" />
+ <element id="Compact.Player.Volume" bg="Unknown" fg="Unknown" />
+ <element id="Compact.Player.Wavebar" fg="Playerpanel_Text_Default" fg2="Playerpanel_Controls_Lowlight" />
+ <element id="Compact.Player.Wavebar.Inner" fg="Playerpanel_Text_Default" fg2="Playerpanel_Controls_Lowlight" />
+
+ <element id="PlayerSidebar.Background" bg="Panels_Background" fg="Panels_Text_Default" />
+ <element id="PlayerSidebar.Control.Default" fg="Panels_Text_Default" />
+ <element id="PlayerSidebar.Control.Highlight" fg="Panels_Headerbar_Text" />
+ <element id="PlayerSidebar.Control.Disabled" fg="Panels_Background" />
+ <element id="PlayerSidebar.ProgressBar" fg="PlayerPanel_Progress_Fill" bg="Panels_Background" bdr="Unknown" />
+ <element id="PlayerSidebar.ProgressButton" fg="PlayerPanel_Progress_Default" />
+ <element id="PlayerSidebar.TrackPosition" fg="Panels_Text_Medium" />
+
+ <element id="PlayerMini.Background" bg="Playerpanel_Background" bg2="Playerpanel_Background" fg="Playerpanel_Text_Default" />
+ <element id="PlayerMini.Control.Default" fg="Playerpanel_Controls" />
+ <element id="PlayerMini.Control.Disabled" fg="Playerpanel_Controls_Lowlight" />
+ <element id="PlayerMini.Control.Highlight" fg="Accent_Colour" />
+ <element id="PlayerMini.ProgressBar" fg="Playerpanel_Progress_Fill" bg="Playerpanel_Background" />
+ <element id="PlayerMini.ProgressButton" fg="Playerpanel_Progress_Fill" />
+ <element id="PlayerMini.Spectrum" fg="Playerpanel_Text_Default" />
+
+ <element id="NowPlayingTrackInfo" bg="Panels_Headerbar_Background" fg="Panels_Headerbar_Text" /> 
+ <element id="NowPlayingList[TrackDetail].ListHeader" bg="Panel_Exploer_Subheader_Background" bg2="Panel_Exploer_Subheader_Background" fg="Panels_Headerbar_Text" bdr="Panels_Background" />
+ <element id="NowPlayingList[TrackDetail].Default" bg="Panels_Background" fg="Panels_Text_Default" bdr="Unknown" />
+ <element id="NowPlayingList[TrackDetail].ListAlternating.Default" bg="Panels_Lines_Alternate" fg="Panels_Text_Default" />
+ <element id="NowPlayingList[TrackDetail].Highlight" bg="Highlight_Background" fg="Highlight_Text" bdr="Accent_Colour" />
+ <element id="NowPlayingList[TrackDetail].Lowlight" bg="Accent_Colour" fg="Lowlight_Text" bdr="Accent_Colour" />
+ <element id="NowPlayingList[TrackDetail].Disabled" fg="Panels_Splitterline" />
+ <element id="NowPlayingList[TrackDetail].ListAlternating.Disabled" fg="Panels_Splitterline" />
+ <element id="NowPlayingList[TrackDetail].ItemSeparatorLine" fg="Panels_Lines_Separator" />
+ <element id="NowPlayingList.ScrollBar" bg="Scrollbars_Highlight" bg2="Scrollbars_Highlight" bdr="Scrollbars_Highlight" />
+ <element id="NowPlayingList.ScrollBarThumb" bg="Panels_Background" bg2="Panels_Background" fg="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="NowPlayingList.ScrollBarBackground" bg="Panels_Background" bg2="Panels_Background" />
+ <element id="NowPlayingList.ScrollBar.Lowlight" bg="Scrollbars_Default" bg2="Scrollbars_Default" bdr="Panels_Background" />
+ <element id="NowPlayingList.SequenceInfo" bg="Highlight_Background" fg="Lowlight_Text" fg2="Panels_Splitterline" bdr="Panels_Separatorline" />
+
+ <element id="NowPlaying[AlbumAndTracks].AlbumSeparatorLine" bg="Panels_Splitterline" bg2="Panels_Splitterline" />
+
+ <element id="NowPlayingPopup.Body" bg="Playerpanel_Background" bg2="Playerpanel_Background" fg="Playerpanel_Text_Default" fg2="Playerpanel_Controls" bdr="Playerpanel_Background" /> 
+ <element id="NowPlayingPopup.Border" bdr="Playerpanel_Background" />
+
+ <element id="MusicExplorerHeader" bg="Panel_Explorer_Header_Background" bg2="Panel_Explorer_Header_Background" fg="Panels_Text_Default" fg2="Panels_Text_Medium" />
+ <element id="MusicExplorerHeaderBar.Default" bg="Panel_Exploer_Subheader_Background" fg="Panels_Headerbar_Text" />
+ <element id="MusicExplorerHeaderBar.Lowlight" fg="Panels_Headerbar_Text" />
+ <element id="MusicExplorerHeaderBar.Highlight" fg="Highlight_Text" />
+ <element id="MusicExplorerTopTracks" bg="Panels_Background" fg="Panels_Text_Default" bdr="Panels_Separatorline" />
+
+ <element id="IconColourOverride.Default" fg="Accent_Colour" />
+ <element id="CaptionBarIconColorOverride" fg="Panels_Headerbar_Text" />
+
+</colours>
+
+<settings>
+ <element id="DefaultIconName">Nord</element>
+ <element id="AllowCenteredTabInCaptionBar">true</element>
+ <!-- <element id="ArtworkDimFactor">0.1</element> -->
+ <!-- <element id="Content[NowPlaying].Body.Default.DisableAdjustment">true</element> -->
+ <!-- <element id="ContrastBoost">0.6</element> -->
+ <!-- <element id="DisableWindowBorders">false</element> -->
+ <element id="MainPanelMargin.Left">0</element>
+ <element id="MainPanelMargin.Right">0</element>
+ <element id="MainPanelMargin.Top">0</element>
+ <element id="MainPanelMargin.Bottom">0</element>
+ <!-- <element id="MenuButtonOffset">0</element> -->
+ <element id="MenuButtonSharp">true</element>
+ <!-- <element id="PlayerAlignElementToPosition">TrackText</element> -->
+ <!-- <element id="PlayerAlignElementToDuration">TrackRating</element> -->
+ <!-- <element id="PlayerAutoColor">true</element> -->
+ <!-- <element id="PlayerAutoColorUsingStandardSkinRules">false</element> -->
+ <element id="PlayerInfoCentered">true</element>
+ <!-- <element id="PlayerProgressFractions">true</element> -->
+ <!-- <element id="PlayerSplitProgressTextFarAlign">true</element> -->
+ <!-- <element id="PlayerSplitProgressXAdj">10</element> -->
+ <!-- <element id="PlayerSplitProgressYAdj">73</element> -->
+ <!-- <element id="PlayerSplitProgressYOffset">0</element> -->
+ <!-- <element id="PlayerSplitProgressYOffset">1</element> -->
+ <element id="ScrollBarHighlightMouseOverPanel">true</element>
+ <!-- <element id="ScrollBarLowlightNarrowOnly">false</element> -->
+ <element id="ScrollBarMargin">2</element>
+ <element id="ScrollPanelMargin">8</element>
+ <element id="ScrollbarNoArrows">true</element>
+ <!-- <element id="ScrollBarSliderSquare">true</element> -->
+ <element id="SlimIcons">true</element>
+ <element id="UseArtworkBorders">true</element>
+ <element id="UseModernMenuButton">true</element>
+ <element id="UseNativeButtonTheme">false</element>
+ <!-- <element id="UseNativeWindow">false</element> -->
+ <!-- <element id="UseSquareTabCorners">true</element> -->
+ <element id="WindowBorderWidth">0</element>
+ <element id="JukeboxCardBarWidth">4</element>
+
+</settings>
+
+<images id="Default">
+ <!-- 1x28, or wider to create image or pattern effects -->
+ <element id="FormBorderTop">
+        Qk2oAAAAAAAAADYAAAAoAAAAAQAAABwAAAABABgAAAAAAHIAAAA3IQAANyEAAAAAAAAAAAAAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhACMhIQAjISEAIyEhAAAA
+ </element>
+ <!-- 5x28 -->
+ <element id="FormBorderTopLeft">
+         Qk1IAAAAAAAAADYAAAAoAAAAAQAAAAQAAAABABgAAAAAABIAAAA3IQAANyEAAAAAAAAAAAAAIyEhACMhIQAjISEAIyEhAAAA
+ </element>
+ <!-- 5x28 -->
+ <element id="FormBorderTopRight">
+         Qk1IAAAAAAAAADYAAAAoAAAAAQAAAAQAAAABABgAAAAAABIAAAA3IQAANyEAAAAAAAAAAAAAIyEhACMhIQAjISEAIyEhAAAA
+ </element>
+ <!-- 4x1 -->
+ <element id="FormBorderLeft">
+        Qk2sAAAAAAAAADoAAAAoAAAABQAAABwAAAABAAgAAQAAAHIAAAAAAAAAAAAAAAEAAAAAAAAAJCIkAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAAAQ==
+ </element>
+ <!-- 4x1 -->
+ <element id="FormBorderRight">
+        Qk2sAAAAAAAAADoAAAAoAAAABQAAABwAAAABAAgAAQAAAHIAAAAAAAAAAAAAAAEAAAAAAAAAJCIkAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAAUAAAAAAQ==
+ </element>
+ <!-- 1x4 -->
+ <element id="FormBorderBottom">
+        Qk1IAAAAAAAAADYAAAAoAAAAAQAAAAQAAAABABgAAAAAABIAAAA3IQAANyEAAAAAAAAAAAAAIyEhACMhIQAjISEAIyEhAAAA
+ </element>
+ <!-- 4x4 -->
+ <element id="FormBorderBottomLeft">
+         Qk1IAAAAAAAAADYAAAAoAAAAAQAAAAQAAAABABgAAAAAABIAAAA3IQAANyEAAAAAAAAAAAAAIyEhACMhIQAjISEAIyEhAAAA
+ </element>
+ <!-- 4x4 -->
+ <element id="FormBorderBottomRight">
+         Qk1IAAAAAAAAADYAAAAoAAAAAQAAAAQAAAABABgAAAAAABIAAAA3IQAANyEAAAAAAAAAAAAAIyEhACMhIQAjISEAIyEhAAAA
+ </element>
+
+</images>
+
+</root>
